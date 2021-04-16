@@ -1,0 +1,41 @@
+{
+  "name": "data-persistency-service",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Tomas Amaro <tomascorreiamaro@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/init.js",
+  "typings": "lib/init.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "ts-node src/init.ts",
+    "dev": "nodemon --config ./nodemon.json",
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "kafkajs": "^1.15.0",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.1.1",
+    "typeorm": "^0.2.32",
+    "typescript": "^4.2.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node-cron": "^2.0.3"
+  }
+}
